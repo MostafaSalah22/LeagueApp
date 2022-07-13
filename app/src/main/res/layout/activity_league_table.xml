@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:hapticFeedbackEnabled="false"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#2196F3"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/league_icon" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="3eso League"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="48sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_first"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/clubs"
+                    android:layout_width="66dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#615E5E"
+                    android:gravity="center"
+                    android:text="Clubs"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#615E5E"
+                    android:gravity="center"
+                    android:text="GP"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/points"
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#615E5E"
+                    android:gravity="center"
+                    android:text="Points"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/win"
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#615E5E"
+                    android:gravity="center"
+                    android:text="Win"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lose"
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#615E5E"
+                    android:gravity="center"
+                    android:text="Lose"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/draw"
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#615E5E"
+                    android:gravity="center"
+                    android:text="Draw"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gI"
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#615E5E"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gO"
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#615E5E"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/rv_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:context=".MainActivity">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_toMatches"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:text="MATCHES RESULTS"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    app:backgroundTint="#101639"
+                    app:cornerRadius="12dp" />
+
+                <Button
+                    android:id="@+id/set_main"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:text="Set match"
+                    android:textColor="#FAFAFA"
+                    app:backgroundTint="#101639"
+                    app:cornerRadius="12dp" />
+
+                <Button
+                    android:id="@+id/repeatLeague_main"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="REPEAT LEAGUE"
+                    android:textColor="#FAFAFA"
+                    app:backgroundTint="#101639"
+                    app:cornerRadius="12dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/delete_main"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Make new league"
+                    android:textColor="#FAFAFA"
+                    app:backgroundTint="#D51E1E"
+                    app:cornerRadius="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/league_icon2" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

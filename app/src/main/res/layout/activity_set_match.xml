@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add_teams_background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="100dp"
+            android:text="Set Match"
+            android:textColor="#000000"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="187dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            app:srcCompat="@drawable/setmatch_player" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/club1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/custom_setmatch_et"
+        android:ems="10"
+        android:hint="Enter first team"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#F2F3F6"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/re1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_setmatch_et"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="Result1"
+        android:inputType="textPersonName|phone"
+        android:nextFocusDown="@+id/re2"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/club1" />
+
+    <EditText
+        android:id="@+id/re2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/custom_setmatch_et"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="Result2"
+        android:inputType="textPersonName|phone"
+        android:nextFocusDown="@+id/club2"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/re1" />
+
+    <EditText
+        android:id="@+id/club2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_setmatch_et"
+        android:ems="10"
+        android:hint="Enter second team"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#F2F3F6"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/re2" />
+
+    <Button
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Done"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#63B9FD"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/club2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/re2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/re1"
+        app:srcCompat="@drawable/vs_white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
